@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport Store</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#38A4FE',
-              }
-            }
-          }
-        }
-    </script>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sport Store</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+     tailwind.config = {
+       theme: {
+         extend: {
+           colors: {
+             clifford: '#38A4FE',
+           }
+         }
+       }
+     }
+ </script>
 </head>
 <body>
-    <header 
-        class="w-full h-20 border-b border-slate-400 grid grid-cols-[max-content_1fr] gap-10 items-center px-10">
-        <h1 class="text-2xl font-bold">Sport Store</h1>
-        <nav>
-            <input 
-                class="w-3/4 border border-slate-500 text-sm px-3 py-1.5 rounded-md focus:outline-none focus:border focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:text-slate-500"
-                type="text"
-                placeholder="search products...">
-            <button 
-                class="bg-clifford px-3 text-sm font-medium py-[0.495rem] -ml-[70px] rounded-r-md text-white hover:bg-sky-600">
-                Search
-            </button>
-        </nav>
-    </header>
-    <main class="bg-blue">
-        <h1>main</h1>
-    </main>
-    <footer>
-        <p>&copy;copyright 2022 by Sport Store</p>
-    </footer>
+ <header 
+     class="w-full h-20 border-b border-slate-400 grid grid-cols-[max-content_1fr] gap-10 items-center px-10">
+     <h1 class="text-2xl font-bold">Sport Store</h1>
+     <nav>
+         <input 
+             class="search-input w-3/4 border border-slate-500 text-sm px-3 py-1.5 rounded-md focus:outline-none focus:border focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:text-slate-500"
+             type="text"
+             placeholder="search products...">
+         <button
+             class="search-button bg-clifford px-3 text-sm font-medium py-[0.495rem] -ml-[70px] rounded-r-md text-white hover:bg-sky-600">
+             Search
+         </button>
+     </nav>
+ </header>
+ <main>
+     <div class="jumbotron">
+         <img src="assets/images/hero.png">
+         <div>
+            <h1>Find & Buy Your Best <span>Equipments</span></h1>
+            <button>Get Now</button>
+         </div>
+     </div>
+     
+ </main>
+ <footer>
+     <p>&copy;copyright 2022 by Sport Store</p>
+ </footer>
 </body>
 </html>
