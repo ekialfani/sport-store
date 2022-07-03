@@ -18,9 +18,9 @@
      }
  </script>
 </head>
-<body>
+<body class="bg-slate-50">
    <header
-      class="w-full h-20 border-b border-slate-400 grid grid-cols-[max-content_1fr] gap-10 items-center px-10">
+      class="w-full h-20 bg-white shadow-sm fixed grid grid-cols-[max-content_1fr] gap-10 items-center px-10">
       <h1 class="text-2xl font-bold">Sport Store</h1>
 
       <nav>
@@ -35,7 +35,7 @@
       </nav>
    </header>
 
-   <main class="px-24 py-10">
+   <main class="px-24 py-28">
       <div class="jumbotron h-80 bg-customcolor grid grid-cols-2 rounded-2xl p-6 overflow-hidden">
          <img class="w-5/6 order-2 mt-8" src="assets/images/hero.png">
 
@@ -50,27 +50,91 @@
          </div>
       </div>
       
-      <div class="categories">
-         <h2>categories</h2>
-         <ul class="category-list">
-            <li>
+      <div class="categories mt-10">
+         <h2 class="text-xl font-medium capitalize">categories</h2>
+
+         <ul class="category-list flex justify-between space-x-16 mt-3">
+            <li 
+               class="bg-white flex-1 border border-slate-400 py-2 rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-5 max-h-5" src="assets/icons/shoes-icon.png">
                <a href="">shoes</a>
             </li>
-            <li>
+
+            <li 
+               class="bg-white flex-1 border border-slate-400 py-2 rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-5 max-h-5" src="assets/icons/jersey-icon.png">
                <a href="">jersey</a>
             </li>
-            <li>
+
+            <li 
+               class="bg-white flex-1 border border-slate-400 py-2 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-5 max-h-5" src="assets/icons/jacket-icon.png">
                <a href="">jacket</a>
             </li>
-            <li>
+
+            <li 
+               class="bg-white flex-1 border border-slate-400 py-2 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-5 max-h-5" src="assets/icons/equipment-icon.png">
                <a href="">equipments</a>
             </li>
-            <li>
+
+            <li 
+               class="bg-white flex-1 border border-slate-400 py-2 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-5 max-h-5" src="assets/icons/merchandies-icon.png">
                <a href="">merchandies</a>
             </li>
          </ul>
+
          <div class="product-list">
-            <h1>product list</h1>
+            <div class="shoes my-6">
+               <h3 class="text-lg font-medium my-2">shoes</h3>
+
+               <ul class="grid grid-cols-5 gap-10">
+                  <li class="bg-white shadow-sm rounded-xl p-5">
+                     <img 
+                        class="w-full h-32 object-cover object-center rounded-xl border border-customcolor"
+                        src="assets/images/shoes/shoes.jpg">
+
+                     <h4 class="text-sm mt-2 mb-1">sepatu basket rebook</h4>
+                     <p class="text-lg font-bold">$999+</p>
+                  </li>
+
+                  <li class="bg-white shadow-sm rounded-xl p-5">
+                     <img 
+                        class="w-full h-32 object-cover object-center rounded-xl border border-customcolor" 
+                        src="assets/images/shoes/shoes-2.jpeg">
+
+                     <h4 class="text-sm mt-2 mb-1">sepatu basket rebook</h4>
+                     <p class="text-lg font-bold">$999+</p>
+                  </li>
+
+                  <li class="bg-white shadow-sm rounded-xl p-5">
+                     <img 
+                        class="w-full h-32 object-cover border border-customcolor rounded-xl" 
+                        src="assets/images/shoes/shoes-3.jpeg">
+
+                     <h4 class="text-sm mt-2 mb-1">sepatu basket rebook</h4>
+                     <p class="text-lg font-bold">$999+</p>
+                  </li>
+
+                  <li class="bg-white shadow-sm rounded-xl p-5">
+                     <img 
+                        class="w-full h-32 object-cover border border-customcolor rounded-xl" 
+                        src="assets/images/shoes/shoes-4.jpg">
+
+                     <h4 class="text-sm mt-2 mb-1">sepatu basket rebook</h4>
+                     <p class="text-lg font-bold">$999+</p>
+                  </li>
+
+                  <li class="bg-white shadow-sm rounded-xl p-5">
+                     <img 
+                        class="w-full h-32 object-cover border border-customcolor rounded-xl" 
+                        src="assets/images/shoes/shoes-5.jpg">
+                     <h4 class="text-sm mt-2 mb-1">sepatu basket rebook</h4>
+                     <p class="text-lg font-bold">$999+</p>
+                  </li>
+               </ul>
+            </div>
          </div>
       </div>
    </main>
