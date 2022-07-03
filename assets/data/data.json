@@ -1,0 +1,337 @@
+[
+	{
+		"sepatu": [
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/6/81583228-48e7-4c28-87cd-0b0c8dc1dc65.jpg",
+				"nama": "Sepatu Bola adidas Model Copa",
+				"deskripsi": {
+					"merk": "Adidas",
+					"kategori": "Sepatu Bola",
+					"warna": "Biru/Tosca",
+					"ukuran": "38-44",
+					"harga": "Rp. 159.000"
+				}
+			},
+			
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/2/9f402fd6-5ec8-438c-be8a-e8299ef1827d.jpg",
+				"nama": "Sepatu Bola Ortuseight",
+				"deskripsi": {
+					"merek": "Ortuseight",
+					"tipe": "Catalyst Revenge FG",
+					"kategori": "Sepatu Bola",
+					"warna": "Black/White/Gold", 
+					"ukuran": "37-44", 
+					"harga": "Rp. 329.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/6/4a3bfc95-1191-43a7-8574-0526b69f74bb.jpg",
+				"nama": "Sepatu Futsal Puma",
+				"deskripsi": {
+					"merek": "Puma",
+					"tipe": "PUMA ULTRA 3.4 IT 106731-01",
+					"kategori": "Sepatu Futsal",
+					"warna": "Orange/Grey",
+					"ukuran": "39-44",
+					"harga": "Rp. 889.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/27/b6617a00-df6c-48a4-b3f3-05250bcb3e36.jpg",
+				"nama": "Sepatu Futsal X Munich",
+				"deskripsi": {
+					"merek": "X Munich",
+					"tipe": "Prisma 13",
+					"kategori": "Sepatu Futsal",
+					"warna": "Green Black", 
+					"ukuran": "39-45", 
+					"harga": "Rp.1.039.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/15/789253c6-36aa-4e00-bf58-c648450ffb05.jpg",
+				"nama": "Sepatu Basket Reebok",
+				"deskripsi": {
+					"merek": "Reebok",
+					"tipe": "Reebok Solution Mid",
+					"warna": "White/Blue",
+					"kategori": "Sepatu Basket",
+					"ukuran": "40-45", 
+					"harga": "Rp.1.449.000"
+				}
+			}
+		],
+
+		"jersey": [
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/5/0b337e86-e71e-49fc-82e6-4b60e53f45ea.jpg",
+				"nama": "Jersey Sepak Bola",
+				"deskripsi": {
+					"toko": "CustomHade",
+					"tipe": "Timnas Indonesia (Away)",
+					"warna": "Green/white",
+					"kategori": "Jersey Sepak Bola",
+					"ukuran": "S, M, L, XL, XXL, XXXL",
+					"harga": "Rp.160.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/5/0d24122c-60ef-4622-8e87-b11b06d5f397.jpg",
+				"nama": "Jersey Sepak Bola",
+				"deskripsi": {
+					"toko": "CustomHade",
+					"tipe": "Timnas Indonesia (Home)",
+					"warna": "Red/white",
+					"kategori": "Jersey Sepak Bola",
+					"ukuran": "S, M, L, XL, XXL, XXXL",
+					"harga": "Rp.160.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/6/15/af98cc1d-6ebf-4a97-96be-27fd545f8fbf.jpg",
+				"nama": "Jersey Voly",
+				"deskripsi": {
+					"toko": "Dream Hobby Shop",
+					"tipe": "MSBY Black Jackal",
+					"warna": "Black",
+					"kategori": "Jersey Voly",
+					"ukuran": "S, M, L, XL, XXL",
+					"harga": "Rp.285.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/6/15/d931b357-e14c-4ab9-8dfa-4b3ccb8ba062.jpg",
+				"nama": "Jersey Voly",
+				"deskripsi": {
+					"toko": "Dream Hobby Shop",
+					"tipe": "Schweiden Adlers",
+					"warna": "White",
+					"kategori": "Jersey Voly",
+					"ukuran": "S, M, L, XL, XXL",
+					"harga": "Rp.285.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/15/33b000f4-9cdd-4dcd-9c60-98d01e136cd0.jpg",
+				"nama": "Jersey Basket",
+				"deskripsi": {
+					"toko": "ThreepointJersey",
+					"tipe": "Seirin",
+					"warna": "Black/Grey",
+					"kategori": "Jersey Basket",
+					"ukuran": "S, M, L, XL, XXL",
+					"harga": "Rp.195.000"
+				}
+			}
+		],
+
+		"jaket": [
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/12/26/dccafe0e-cf64-426a-ae3c-90204dea4c17.jpg",
+				"nama": "Jaket Sepak Bola",
+				"deskripsi": {
+					"toko": "MJ-Jersey",
+					"tipe": "Barcelona Pre Match",
+					"warna": "Blue/Red/Black",
+					"kategori": "Jaket Sepak Bola",
+					"ukuran": "S, M, L, XL",
+					"harga": "Rp.139.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/2/1/a78b153c-8044-47e0-a971-74d3daa57e1e.jpg",
+				"nama": "Jaket Sepak Bola",
+				"deskripsi": {
+					"toko": "Filosofi Jersey",
+					"tipe": "Chelsea Pre Macth",
+					"warna": "Blue",
+					"kategori": "Jaket Sepak Bola",
+					"ukuran": "S, M, L, XL",
+					"harga": "Rp.199.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/product-1/2018/8/25/369860/369860_f43ed277-6f8b-495a-a914-ff4d8e8ff238_1000_973.png",
+				"nama": "Jaket Sepak Bola",
+				"deskripsi": {
+					"toko": "Konveksionlinegarut",
+					"tipe": "Vaste Manchaster United",
+					"warna": "Red",
+					"kategori": "Jaket Sepak Bola",
+					"ukuran": "S, M, L, XL",
+					"harga": "Rp.135.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/14/9f27e070-2475-47e6-a60f-25f4ca79d25c.jpg",
+				"nama": "Jaket Sepak Bola",
+				"deskripsi": {
+					"toko": "ARK Colection",
+					"tipe": "Italia National Team Hoodie",
+					"warna": "Tosca Blue",
+					"kategori": "Jaket Sepak Bola",
+					"ukuran": "S, M, L, XL",
+					"harga": "Rp.118.900"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/product-1/2020/3/31/5947502/5947502_e75f76d1-b973-47a2-9262-88c65bd447f7_700_700",
+				"nama": "Jaket Sepak Bola",
+				"deskripsi": {
+					"toko": "Cuan Jersey",
+					"tipe": "Sweater Midlayer Tracksuit Training Real Madrid", 
+					"warna": "White/Black",
+					"kategori": "Jaket Sepak Bola",
+					"ukuran": "S, M, L, XL",
+					"harga": "Rp.259.000"
+				}
+			}
+		],
+
+		"peralatan": [
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/5/3/00fadef7-27c9-4170-bc36-a378c923b588.jpg",
+				"nama": "Kaos Kaki Futsal",
+				"deskripsi": {
+					"toko": "Goalsportindo",
+					"tipe": "AVO Anti Slip R9",
+					"warna": "White",
+					"kategori": "Kaos Kaki Pendek",
+					"ukuran": "S, M, L, XL",
+					"harga": "Rp.26.900"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/product-1/2018/11/12/496354/496354_ca1f8086-5c15-42c1-8c39-8ef48aebd67d_700_700.jpg",
+				"nama": "Kaos Kaki Sepak Bola",
+				"deskripsi": {
+					"toko": "Planet-Jersey",
+					"tipe": "Nike",
+					"warna": "White",
+					"kategori": "Kaos Kaki Panjang",
+					"ukuran": "S, M, L, XL",
+					"harga": "Rp.29.900"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/6/30/5ad58ef6-8fdd-4b11-91f8-7c92083aa123.jpg",
+				"nama": "Bola Futsal",
+				"deskripsi": {
+					"toko": "King of Dribble",
+					"tipe": "Ortuseight Memphis Fs",
+					"warna": "White Navy",
+					"kategori": "Bola Futsal",
+					"ukuran": "4",
+					"harga": "Rp.254.150"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/2/18/00a46deb-b0a9-403c-bd42-0f898f080bc0.jpg",
+				"nama": "Training Cone",
+				"deskripsi": {
+					"toko": "Nimoshi-Sport Official",
+					"tipe": "NIMO Football Marker Cone Set",
+					"warna": "Red/Blue/Green/Yellow",
+					"kategori": "training Cone",
+					"bahan": "Plastik Elastis",
+					"harga": "Rp.156.450"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/6/1/b7befa97-8305-4ed8-a07d-b0bc3f328ad8.jpg",
+				"nama": "Bola Basket",
+				"deskripsi": {
+					"toko": "Atletik_Sport",
+					"tipe": "Bola basket spalding NBA",
+					"warna": "Orange/Black",
+					"kategori": "Bola Basket",
+					"ukuran": "7",
+					"harga": "Rp.107.000"
+				}
+			}
+		],
+
+		"merchandies": [
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/22/42c81ef9-2466-4dbb-a654-395024cce1c9.jpg",
+				"nama": "Topi Basket",
+				"deskripsi": {
+					"toko": "Snapbacker Id",
+					"tipe": "NBA Club Snapback Hat Bordir",
+					"material": "katun dan polister",
+					"kategori": "Topi Basket",
+					"ukuran": "One Size Fits All",
+					"harga": "Rp.85.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2022/6/21/0b6b4cd3-e04a-4307-a64b-09cc84648a46.jpg",
+				"nama": "Wallpaper 3D",
+				"deskripsi": {
+					"toko": "NBA Id",
+					"tipe": "Fire Basket Ball Wallpaper",
+					"material": "PVC",
+					"kategori": "Wallpaper 3D", 
+					"ukuran": "70 x 50 cm",
+					"harga": "Rp.80.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/product-1/2020/8/17/108190853/108190853_bc7cedd2-f12e-48e8-bb3a-ed2fa10d25fb_1280_1280",
+				"nama": "Stiker",
+				"deskripsi": {
+					"toko": "Stikersply",
+					"tipe": "Club Team Stiker Stumbler",
+					"material": "Vinyle Glossy",
+					"kategori": "Stiker & Label",
+					"ukuran": "2, 3, 4, 5, 6 cm",
+					"harga": "Rp.15.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/5/2b5a8281-f4cb-418c-a914-75937a65bc48.jpg",
+				"nama": "Bendera",
+				"deskripsi": {
+					"toko": "Mushikyo",
+					"tipe": "Bendera Gantung",
+					"material": "Polyester Satin",
+					"kategori": "Bendera",
+					"ukuran": "68 x 30 cm",
+					"harga": "Rp.70.000"
+				}
+			},
+
+			{
+				"gambar": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2022/5/11/98a14e33-8407-45db-ba3f-ad14a82acd19.jpg",
+				"nama": "Gantungan Kunci",
+				"deskripsi": {
+					"toko": "Warung Redmart",
+					"tipe": "Gantungan Kunci Logo Klub",
+					"material": "Kulit",
+					"kategori": "Gantungan Kunci",
+					"ukuran": "15 x 10 cm",
+					"harga": "Rp.47.000"
+				}
+			}
+		]
+	}
+]

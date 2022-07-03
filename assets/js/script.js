@@ -1,1 +1,1 @@
-console.log('hello world');
+fetch('assets/data/data.json').then(res => res.json()).then(res => console.log(res));
