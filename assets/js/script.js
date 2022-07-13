@@ -1,6 +1,14 @@
+// mengambil element html menggunakan DOM manipulation
+// mengambil element list-produk yang akan diisi dengan data cards yg akan dibuat dari js
 const list = document.querySelector('.product-list');
+
+// mengambil element dengan nama class disconnect
 const disconnect = document.querySelector('.disconnect');
+
+// mengambil element jumbotron
 const jumbotronButton = document.querySelector('.jumbotron button');
+
+// mengambil element logo
 const logo = document.querySelector('header h1');
 
 
@@ -32,7 +40,8 @@ logo.addEventListener('click', function(){
 })
 
 
-// ketika tombol "cari sekarang juga" di klik 
+// ketika tombol "cari sekarang juga" di klik
+// maka scrollnya akan ke posisi list produknya 
 jumbotronButton.addEventListener('click', function(){
     window.scrollTo({
         top: 380,
@@ -43,7 +52,7 @@ jumbotronButton.addEventListener('click', function(){
 })
 
 
-// mengambil daftar produk
+// mengambil semua list/daftar produk
 async function listProducts(){
     // mengambil data produk
     const products = await getDataProducts();
@@ -54,9 +63,10 @@ async function listProducts(){
 
 // memperbaru daftar produk berdasarkan kategori
 function updateListProducts(products){
+    // membuat variabel result untuk menampung produk yang sudah di filter
     let result;
 
-    // melooping dan memfilter datanya berdasarkan kategori dan menampilkannya ke halaman menggunakan template literals
+    // melooping dan memfilter datanya berdasarkan kategori dan memasukkannya kedalam variabel result
     products.forEach(product => {
         result = (
             `<div>
@@ -77,16 +87,18 @@ function updateListProducts(products){
 // mengambil data berdasarkan kategorinya dan memasukkannya kedalam card
 // mengambil data sepatu dan membuatnya menjadi card
 function shoes(products){
+    // membuat variabel untuk menampung semua data card sepatu
     let cards = '';
 
-    // melooping data sepatu dan memasukkannya kedalam card
+    // melooping semua data sepatu dan menampungnya kedalam variabel cards
     products.forEach(product => cards += card(product));
 
+    // mengembalikan semua data sepatu yang sudah diubah menjadi card
     return (
         `<div class="my-6">
             <h3 class="text-lg font-medium my-2">Sepatu</h3>
 
-            <ul class="cards-shoes grid grid-cols-5 gap-10">
+            <ul class="cards-shoes grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
             ${cards}
             </ul>
         </div>`
@@ -104,7 +116,7 @@ function jersey(products){
         `<div class="my-6">
             <h3 class="text-lg font-medium my-2">Jersey</h3>
 
-            <ul class="cards-jersey grid grid-cols-5 gap-10">
+            <ul class="cards-jersey grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
                 ${cards}
             </ul>
         </div>`
@@ -122,7 +134,7 @@ function jacket(products){
         `<div class="my-6">
             <h3 class="text-lg font-medium my-2">Jaket</h3>
 
-            <ul class="cards-jacket grid grid-cols-5 gap-10">
+            <ul class="cards-jacket grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
                 ${cards}
             </ul>
         </div>`
@@ -140,7 +152,7 @@ function equipments(products){
         `<div class="my-6">
             <h3 class="text-lg font-medium my-2">Alat Olahraga</h3>
 
-            <ul class="cards-equipments grid grid-cols-5 gap-10">
+            <ul class="cards-equipments grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
                 ${cards}
             </ul>
         </div>`
@@ -157,7 +169,7 @@ function merchandies(products){
         `<div class="my-6">
             <h3 class="text-lg font-medium my-2">Merchandies</h3>
 
-            <ul class="cards-merchandies grid grid-cols-5 gap-10">
+            <ul class="cards-merchandies grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
                 ${cards}
             </ul>
         </div>`
@@ -165,12 +177,32 @@ function merchandies(products){
 }
 
 
-// mengambil semua kategori menggunakan DOM manipulation
+// mengubah masing-masing data produknya menjadi sebuah card html
+function card(product){
+    return (
+        `<li 
+            data-id=${product.id}
+            class="card bg-white shadow-md rounded-xl p-5 hover:cursor-pointer hover:bg-slate-50">
+            <img 
+            class="w-full h-32 object-cover object-center rounded-xl border border-customcolor"
+            src=${product.gambar}>
+
+            <h4 class="text-sm mt-2 mb-1">${product.nama}</h4>
+            <p class="text-lg font-bold">${product.deskripsi.harga}</p>
+        </li>`
+    )
+}
+
+
+// memfilter data berdasarkan dataftar kategori
+// mengambil semua daftar kategori menggunakan DOM manipulation
 const categoryList = document.querySelectorAll('.category-list li');
 
-// ketika salah satu dari daftar kategorinya di klik
+// melooping semua daftar kategori yg sudah diambil
 categoryList.forEach(category => {
+    // dan jika salah satu daftar kategorinya di klik
     category.addEventListener('click', async function(){
+        // ambil data produk berdasarkan kategori yg diklik pengguna dan memasukkanya kedalam variabel products
         const products = await getDataProducts();
 
         categoryList.forEach(c => c.classList.remove('border-sky-500'));
@@ -231,7 +263,7 @@ searchButton.addEventListener('click', async function(){
     // mengambil data produk
     const products = await getDataProducts();
 
-    // memfilter data produk berdasarkan masukan pengguna
+    // memfilter data produk berdasarkan masukan pengguna dan setelah itu baru dimasukkan kedalam list produk pada file html
     products.map(product => {
         if(namaProduct == 'sepatu'){
             list.innerHTML = shoes(product.sepatu);
@@ -256,19 +288,22 @@ searchButton.addEventListener('click', async function(){
 })
 
 
+// menampilkan info detail dari produk
+
+// mengambil element card info menggunakan DOM manipulation
 const productInfo = document.querySelector('.product-info');
 const cardInfo = document.querySelector('.card-info');
 
-// menampilkan info detail dari produk ketika di klik
+// menampilkan info detail dari produk ketika salah satu cardnya di klik
 window.addEventListener('click', async function(e){
     // mengambil data produk
     const products = await getDataProducts();
 
-    // mengambil id dari produk yg di klik
+    // mengambil id dari produk yg di klik dan memasukkannya kedalam variabel productId
     const id = e.target.parentElement.dataset.id;
     const productId = id ? id : null;
 
-    
+    // melakukan seleksi kondisi untuk memfilter data produk berdasarkan id yg diklik pengguna
     if(e.target.parentElement.parentElement.classList.contains('cards-shoes')){
         products.forEach(product => productDetails(productId, product.sepatu));
 
@@ -316,13 +351,15 @@ function productDetails(productId, products){
 }
 
 
-// memperbarui info detail dari produk yg di klik dan men-generate nya menjadi html
+// memperbarui info detail dari produk yg di klik tadi dan men-generate nya menjadi tag html
 function updateProductDetails(product){
+    // mengambil element detail produk
     const detail = document.querySelector('.product-detail');
     
+    // mengambil detail dari data produknya dan mengubahnya menjadi card atau tag html
     const productDetail = (
-        `<img 
-            class="h-full w-full object-contain border-r border-slate-300 px-3" 
+        `<img
+            class="h-full w-full object-contain border-b border-slate-300 md:border-b-0 md:border-r border-slate-400 p-3" 
             src=${product.gambar} alt=${product.nama}>
         <div class="p-5">
            <h3 class="text-lg font-medium">${product.nama}</h3>
@@ -355,27 +392,12 @@ function updateProductDetails(product){
         </div>`
     )
 
+    // memasukkan data detail produk yg sudah dirubah menjadi tag html tadi dan memasukkannya kedalam detail produk pada file html
     detail.innerHTML = productDetail;
 }
 
 
-function card(product){
-    return (
-        `<li 
-            data-id=${product.id}
-            class="card bg-white shadow-md rounded-xl p-5 hover:cursor-pointer hover:bg-slate-50">
-            <img 
-            class="w-full h-32 object-cover object-center rounded-xl border border-customcolor"
-            src=${product.gambar}>
-
-            <h4 class="text-sm mt-2 mb-1">${product.nama}</h4>
-            <p class="text-lg font-bold">${product.deskripsi.harga}</p>
-        </li>`
-    )
-}
-
-
-// mengambil data dari fake database menggunakan fetch api.
+// mengambil data produk dari data.json menggunakan fetch api.
 function getDataProducts(){
     return fetch('assets/data/data.json').then(response => response.json()).then(response => response);
 }

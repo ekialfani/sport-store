@@ -38,39 +38,44 @@
 <body>
    <!-- header -->
    <header
-      class="w-full h-20 bg-white shadow-sm fixed grid grid-cols-[max-content_1fr] gap-10 items-center px-10">
+      class="w-full h-20 bg-white shadow-sm fixed z-20 grid grid-cols-[max-content_1fr] px-8 gap-5 items-center md:gap-8 lg:gap-10 md:px-8 lg:px-10">
 
       <!-- logo -->
-      <h1 id="sport-store" class="text-2xl font-bold hover:cursor-pointer">Sport Store</h1>
+      <h1 id="sport-store" 
+         class="text-lg font-bold hover:cursor-pointer md:text-xl lg:text-2xl">
+         Sport Store
+      </h1>
 
       <!-- navbar -->
       <nav>
          <input 
-            class="search-input w-3/4 border border-slate-400 text-sm px-3 py-1.5 rounded-md focus:outline-none focus:border focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:text-slate-500"
+            class="search-input w-full border border-slate-400 px-2 py-1 text-xs rounded-md focus:outline-none focus:border focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:text-slate-500 md:w-4/5 md:py-1.5 lg:text-sm lg:w-3/4 lg:px-3 lg:py-1.5"
                type="text"
                placeholder="cari produk berdasarkan Kategori...">
 
          <a href="#categories"
-            class="search-button bg-customcolor px-3 text-sm font-medium py-[0.590rem] -ml-[54px] rounded-r-md text-white hover:bg-sky-600">
+            class="search-button bg-customcolor px-3 font-medium py-1.5 text-xs -ml-[50px] rounded-r-md text-white hover:bg-sky-600 md:py-2 lg:text-sm lg:py-[0.590rem] lg:-ml-[55px]">
             Cari
          </a>
       </nav>
    </header>
 
    <!-- konten utama -->
-   <main class="px-24 pt-28 pb-20">
+   <main class="px-5 sm:px-10 md:px-14 lg:px-24 pt-28 pb-20">
       <!-- jumbotron -->
-      <div class="jumbotron h-80 bg-customcolor grid grid-cols-2 rounded-2xl p-6 overflow-hidden">
-         <img class="w-5/6 order-2 mt-10" src="assets/images/hero.png">
+      <div class="jumbotron grid grid-cols-[1.5fr_1fr] bg-customcolor rounded-2xl sm:bg-purple-500 md:bg-slate-500 lg:bg-sky-500">
+         <div class="order-2 relative z-auto">
+            <img class="absolute bottom-0" src="assets/images/hero.png">
+         </div>
 
-         <div class="px-10 pb-10">
-            <h1 class="text-5xl font-bold text-white leading-snug mb-5">
-               Cari & Dapatkan Peralatan Olahraga <span class="block">Terbaik Anda!</span>
+         <div class="order-1 py-6 pl-6 sm:py-8 sm:pl-8 md:py-12 md:pl-12 lg:py-14 lg:pl-14">
+            <h1 class="font-bold text-white text-sm mb-5 sm:text-2xl sm:leading-tight md:text-3xl md:leading-snug lg:text-5xl lg:leading-snug">
+               Cari & Dapatkan Peralatan <span>Olahraga Terbaik Anda!</span>
             </h1>
 
             <button
-               class="bg-white px-8 text-sm py-3 rounded-md font-medium text-customcolor hover:bg-slate-100">
-               Cari Sekarang Juga
+               class="bg-white px-2 sm:px-3 md:px-8 md:py-3 text-xs md:text-sm py-2 rounded-md font-medium text-customcolor hover:bg-slate-100 md:mt-5">
+               Cari Sekarang
             </button>
          </div>
       </div>
@@ -80,34 +85,34 @@
          <h2 class="text-xl font-medium capitalize">Kategori</h2>
 
          <!-- daftar kategori -->
-         <ul class="category-list flex justify-between space-x-16 mt-3">
+         <ul class="category-list flex justify-evenly mt-3 flex-wrap space-x-3">
             <li 
-               class="shoes bg-white flex-1 border-2 border-slate-400 py-2 rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
-               <img class="max-w-5 max-h-5" src="assets/icons/shoes-icon.png">
+               class="shoes bg-white border-2 border-slate-400 py-1.5 px-1 w-32 lg:flex-1 lg:text-sm mb-3 rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2 text-xs">
+               <img class="max-w-4 max-h-4" src="assets/icons/shoes-icon.png">
                <span>sepatu</span>
             </li>
 
             <li 
-               class="jersey bg-white flex-1 border-2 border-slate-400 py-2 rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
-               <img class="max-w-5 max-h-5" src="assets/icons/jersey-icon.png">
+               class="jersey bg-white text-xs border-2 border-slate-400 py-1.5 px-1 w-32 lg:flex-1 lg:text-sm mb-3 rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-4 max-h-4" src="assets/icons/jersey-icon.png">
                <span>jersey</span>
             </li>
 
             <li 
-               class="jacket bg-white flex-1 border-2 border-slate-400 py-2 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
-               <img class="max-w-5 max-h-5" src="assets/icons/jacket-icon.png">
+               class="jacket bg-white text-xs border-2 border-slate-400 py-1.5 px-1 w-32 lg:flex-1 lg:text-sm mb-3 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-4 max-h-4" src="assets/icons/jacket-icon.png">
                <span>jaket</span>
             </li>
 
             <li 
-               class="equipments bg-white flex-1 border-2 border-slate-400 py-2 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
-               <img class="max-w-5 max-h-5" src="assets/icons/equipment-icon.png">
+               class="equipments bg-white text-xs border-2 border-slate-400 py-1.5 px-1 w-32 lg:flex-1 lg:text-sm mb-3 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-4 max-h-4" src="assets/icons/equipment-icon.png">
                <span>alat olahraga</span>
             </li>
 
             <li 
-               class="merchandies bg-white flex-1 border-2 border-slate-400 py-2 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
-               <img class="max-w-5 max-h-5" src="assets/icons/merchandies-icon.png">
+               class="merchandies bg-white text-xs border-2 border-slate-400 py-1.5 px-1 w-32 lg:flex-1 lg:text-sm mb-3 text-center rounded-md hover:border-customcolor hover:cursor-pointer flex items-center justify-center space-x-2">
+               <img class="max-w-4 max-h-4" src="assets/icons/merchandies-icon.png">
                <span>merchandies</span>
             </li>
          </ul>
@@ -119,10 +124,10 @@
       </div>
 
       <!-- detail produk -->
-      <div class="product-info pt-5 fixed scroll top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.6)] hidden items-center justify-center">
-         <div class="card-info w-1/2 bg-white px-6 py-10 border-box rounded-lg relative animate-show">
+      <div class="product-info px-6 py-10 sm:px-24 md:px-0 fixed z-50 overflow-y-scroll top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.6)] hidden items-center justify-center">
+         <div class="card-info w-full md:w-3/4 lg:w-1/2 mt-48 md:m-0 bg-white px-6 py-10 border-box rounded-lg relative animate-show">
             <h2 class="text-center text-xl font-medium mb-5">Detail Produk</h2>
-            <div class="product-detail h-96 grid grid-cols-2 border border-slate-300 rounded-lg">
+            <div class="product-detail grid grid-cols-1 md:grid-cols-2 md:h-96 border border-slate-300 rounded-lg">
                <!-- content ini digenerate melalui javascript -->
             </div>
 
@@ -134,7 +139,7 @@
 
       <!-- error handling -->
       <!-- jika jaringan terputus -->
-      <div class="disconnect fixed z-999 top-0 left-0 bottom-0 right-0 bg-white p-10 hidden">
+      <div class="disconnect fixed z-50 top-0 left-0 bottom-0 right-0 bg-white p-10 hidden">
          <h1 class="flex items-center space-x-3 justify-center">
                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
